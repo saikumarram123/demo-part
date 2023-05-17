@@ -1,4 +1,4 @@
-@Library('test-demo') _
+// Jenkinsfile
+@Library('my-shared-library') _
 
-log.info 'Starting'
-log.warning 'Nothing to do!'
+evenOrOdd(currentBuild.getNumber())
